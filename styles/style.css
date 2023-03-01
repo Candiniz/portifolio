@@ -25,7 +25,7 @@ header {
 }
 
 .logo {
-    width: 250px;
+    width: 20vw;
 }
 
 .navbar a {
@@ -33,13 +33,26 @@ header {
     text-decoration: none;
     margin-left: 20px;
     font-weight: 600;
-    padding: 6px 15px;
+    padding: 6px .3vw 0px .3vw;
     border-radius: 20px;
     transition: 0.3s;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
 }
 
-.navbar a:hover, .navbar a.active {
+@media (max-width: 768px) {
+    .navbar a {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        letter-spacing: 0px;
+    }   
+}
+
+.navbar a:hover, .navbar a#active {
     background: #c8da5b;
+    color: black;
 }
 
 .paralax {
@@ -47,7 +60,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 690px;
+    padding-bottom: 41%;
+    height: 0;
 }
 
 .paralax img {
@@ -60,35 +74,27 @@ header {
 
 .paralax #t1 {
     position: absolute;
-    margin-left: 730px;
-    top: 33%;
+    margin-left: 50vw;
+    top: 32%;
     left: 0%;
     color: white;
-    font-size: 5.6em;
-    text-shadow: 0px 0px 15px black;
+    font-size: 7vw;
     font-family: 'poppinssemibold';
 }
 
 .paralax #t2 {
     position: absolute;
-    margin-left: 730px;
+    margin-left: 50vw;
     top: 45%;
     left: 0%;
     color: #c8da5b;
-    font-size: 4em;
-    letter-spacing: 11.9px;
+    font-size: 5.14vw;
+    letter-spacing: 0.83vw;
     text-shadow: 0px 0px 10px black;
     font-family: 'poppinssemibold';
 }
 
-.paralax #palheta {
-    position: absolute;
-    margin-left: 400px;
-    margin-top: 250px;
-    top: 0%;
-    left: 0%;
-    width: 500px;
-}
+
 
 .main {
     position: relative;
@@ -99,16 +105,28 @@ header {
 
 .barra-div-green {
     position: relative;
+    display: block;
     background-color: #c8da5b;
     width: 100%;
-    height: 50px;
+    height: 0;
+    max-height: 50px;
+    padding-top: 4%;
     box-shadow: 0px 0px 30px black;
+}
+
+.barra-div-blue {
+    position: relative;
+    background-color: rgb(91, 123, 177);
+    width: 100%;
+    height: 0;
+    max-height: 20px;
+    padding-top: 2%;
 }
 
 #insta {
     position: absolute;
     border-radius: 46px;
-    width: 90px;
+    width: 6%;
     z-index: 1;
     top: -25%;
     left: 85%;
@@ -118,7 +136,7 @@ header {
 #linkedin {
     position: absolute;
     border-radius: 46px;
-    width: 90px;
+    width: 6%;
     z-index: 1;
     top: -25%;
     left: 78%;
@@ -135,20 +153,26 @@ header {
     transition: 0.4s;
 }
 
-.barra-div-blue {
-    position: relative;
-    background-color: rgb(91, 123, 177);
-    width: 100%;
-    height: 20px;
-}
-
 #titulo-main {
-    font-size: 6em;
+    font-size: 6vw;
     font-family: 'poppinssemibold';
     text-align: center;
     letter-spacing: 10px;
     padding-top: 50px;
     text-shadow: 0px 0px 20px rgba(245, 245, 245, 0.353);
+}
+
+@media (max-width: 990px) {
+    #titulo-main {
+        font-size: 4vw;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 570px) {
+    #titulo-main {
+        font-size: 3vw;
+    }
 }
 
 #easier {
