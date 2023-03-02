@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/media.css">
     <title>Contact Me</title>
 </head>
 <body>
-    <form action="https://api.staticforms.xyz/submit" method="post">
-        <input type="hidden" name="accessKey" value="e44fc5d0-0b52-4cb1-9f79-fefc3800d89c">
-        <label>Name</label>
-        <input type="text" name="name" placeholder="Digit your name:" autocomplete="off">
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Digit your email:">
-        <textarea name="message" cols="30" rows="10" placeholder="Digit your message"></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+    <session class="contact-page">
+        <aside class="email-icon">
+            <img src="images/email-icon.png">
+        </aside>
+        <section class="form-contact">
+            <h2>Contact Me:</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="Digit your name:" autocomplete="off" required>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Digit your email:" autocomplete="off" required>
+                <label>Message:</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digit your message" required></textarea>
+                <button id="submitmessage" type="submit">Enviar</button>
+
+                <input type="hidden" name="accessKey" value="abbc2786-beb5-4c84-a5dc-5f1084ed256e">
+                <input type="hidden" name="redirectTo" value="https://candiniz.github.io/portifolio/thankyou.html">
+            </form>
+        </section>
+    </session>
 
 </body>
 </html>
