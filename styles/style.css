@@ -1,3 +1,4 @@
+/* APLICADO PARA TUDO */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,12 @@
     font-family: 'poppinsregular', sans-serif;
 }
 
+/* APLICADO PARA O HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* APLICADO PARA O BODY */
 body {
     background: linear-gradient(black, #1E293B);
     min-height: 100vh;
@@ -12,6 +19,7 @@ body {
     overflow-x: hidden;
 }
 
+/* HEADER */
 header {
     position: absolute;
     top: 0;
@@ -26,6 +34,7 @@ header {
 
 .logo {
     width: 20vw;
+    padding-top: 10px;
 }
 
 .navbar a {
@@ -40,6 +49,7 @@ header {
     letter-spacing: 1px;
 }
 
+/* RESPONSIVIDADE DA NAVBAR */
 @media (max-width: 768px) {
     .navbar a {
         margin-left: 0vw;
@@ -55,6 +65,7 @@ header {
     color: black;
 }
 
+/* RETRATO E "CREATIVE DEVELOPER" */
 .paralax {
     position: relative;
     display: flex;
@@ -64,6 +75,7 @@ header {
     height: 0;
 }
 
+/* TODAS AS CAMADAS DA SEÇÃO DA PARALAX*/
 .paralax img {
     position: absolute;
     top: 0;
@@ -94,15 +106,15 @@ header {
     font-family: 'poppinssemibold';
 }
 
-
-
-.main {
-    position: relative;
-    padding: 50px;
-    background: black;
-    color: white;
+.paralax #tech {
+    position: absolute;
+    top: 59%;
+    left: 0%;
+    margin-left: 67.5vw;
+    width: 16%;
 }
 
+/* BARRA DAS REDES SOCIAIS*/
 .barra-div-green {
     position: relative;
     display: block;
@@ -123,24 +135,24 @@ header {
     padding-top: 2%;
 }
 
+/* BOTÕES DAS REDES SOCIAIS */
 #insta {
     position: absolute;
-    border-radius: 46px;
+    border-radius: 52px;
     width: 6%;
     z-index: 1;
     top: -25%;
     left: 85%;
-    border: solid 3px #c8da5b;
 }
 
 #linkedin {
     position: absolute;
-    border-radius: 46px;
+    border-radius: 52px;
     width: 6%;
     z-index: 1;
     top: -25%;
     left: 78%;
-    border: solid 3px #c8da5b;
+
 }
 
 #linkedin:hover {
@@ -153,15 +165,18 @@ header {
     transition: 0.4s;
 }
 
+/* HELLO, WORLD! MY NAME IS ANDERSON DINIZ */
 #titulo-main {
-    font-size: 6vw;
+    font-size: 3vw;
     font-family: 'poppinssemibold';
     text-align: center;
     letter-spacing: 10px;
     padding-top: 50px;
+    padding-bottom: 100px;
     text-shadow: 0px 0px 20px rgba(245, 245, 245, 0.353);
 }
 
+/* RESPONSIVIDADE DO TITULO */
 @media (max-width: 990px) {
     #titulo-main {
         font-size: 4vw;
@@ -175,22 +190,114 @@ header {
     }
 }
 
-#easier {
+/* ANIMAÇAO DO CONTEUDO */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#highlight-text {
     color: #c8da5b;
     font-family: 'poppinssemibold';
     text-decoration: underline;
 }
 
-.content {
+/* CONTEUDO */
+.main {
+    position: relative;
+    margin: auto;   
+    padding: 50px;
+    background: black;
+    color: white;
+    width: 100%;
+}
+
+.content1 {
+    margin: auto;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1300px;
+    background-color: rgb(26, 26, 26);
+    padding: 4%;
+    border-radius: 20px;
+}
+
+.content2 {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1300px;
+    background-color: rgb(26, 26, 26);
+    padding: 4%;
+    border-radius: 20px;
+}
+
+h3 {
+    margin-bottom: 4%;
+}
+
+/* ABOUT ME */
+#aboutme-txt {
+    max-width: 700px;
+    font-size: 1.7vw;
+    width: 50%;
+    text-indent: 10%;
+    text-align: justify;
+    margin-right: 6%;
+}
+
+#aboutme-img {
+    height: fit-content;
+    max-width: 400px;
+    width: 50%;
+}
+
+#me-leroy {
+    width: 100%;
+    box-shadow: 0px 0px 30px black;
+}
+
+.space {
+    height: 15vw;
+}
+
+#myqualifications-txt {
+    max-width: 900px;
+    font-size: 1.7vw;
+    text-indent: 10%;
+    text-align: justify;
+}
+
+#qualification-logos img {
+    padding-top: 3vw;
+    width: 11vw;
+}
+
+#aboutme-finalline {
+    text-align: center;
+    padding-top: 5vw;
+    font-size: 1.7vw;
+    padding-bottom: 20vw;
+}
+
+#aboutme-finalline2 {
+    text-align: center;
+    padding-top: 5vw;
+    font-size: 1vw;
+    padding-bottom: 5vw;
     margin: auto;
 }
-
-#col1,#col2 {
-    background-color: rgb(26, 26, 26);
-    height: 300px;
-    max-width: 800px;
-    width: 1000px;
-
-}
-
