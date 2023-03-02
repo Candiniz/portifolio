@@ -299,6 +299,14 @@ h3 {
     align-items: center;
     justify-content: center;
     min-height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.email-icon ul {
+    color: white;
+    list-style-type: none;
+    margin-top: 1vw;
 }
 
 .email-icon img {
